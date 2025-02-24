@@ -1,5 +1,13 @@
+---
+title: Tidy Tuesday for February 25, 2025
+format: html
+
+---
+
+
 
 ```{r}
+
 
 library(tidyverse)
 
@@ -33,5 +41,16 @@ summary(df_article_data)
 ```{r}
 
 head(df_model_data)
+
+```
+
+
+```{r}
+#| label: filter-gyn-onc 
+
+# Find gyn onc related articles 
+
+df_article_data |> 
+    filter(cancer_ovarian == 1 | cancer_uterine == 1 | cancer_cervical == 1 | cancer_vulvar == 1 | other_gyn_onc == 1)
 
 ```
