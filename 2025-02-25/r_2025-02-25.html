@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>r_2025-02-25</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="r_2025-02-25_files/libs/clipboard/clipboard.min.js"></script>
+<script src="r_2025-02-25_files/libs/quarto-html/quarto.js"></script>
+<script src="r_2025-02-25_files/libs/quarto-html/popper.min.js"></script>
+<script src="r_2025-02-25_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="r_2025-02-25_files/libs/quarto-html/anchor.min.js"></script>
+<link href="r_2025-02-25_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="r_2025-02-25_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="r_2025-02-25_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="r_2025-02-25_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="r_2025-02-25_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>all_data <span class="ot">=</span> tidytuesdayR<span class="sc">::</span><span class="fu">tt_load</span>(<span class="st">'2025-02-25'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>---- Compiling #TidyTuesday Information for 2025-02-25 ----
+--- There are 2 files available ---
+
+
+── Downloading files ───────────────────────────────────────────────────────────
+
+  1 of 2: "article_dat.csv"
+  2 of 2: "model_dat.csv"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_article_data <span class="ot">&lt;-</span> all_data<span class="sc">$</span>article_dat</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df_model_data <span class="ot">&lt;-</span> all_data<span class="sc">$</span>model_dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df_article_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      pmid              doi               jabbrv            journal         
+ Min.   :19081561   Length:318         Length:318         Length:318        
+ 1st Qu.:25751198   Class :character   Class :character   Class :character  
+ Median :29605050   Mode  :character   Mode  :character   Mode  :character  
+ Mean   :29555183                                                           
+ 3rd Qu.:33827144                                                           
+ Max.   :37393012                                                           
+                                                                            
+      year         month               day               title          
+ Min.   :2010   Length:318         Length:318         Length:318        
+ 1st Qu.:2015   Class :character   Class :character   Class :character  
+ Median :2018   Mode  :character   Mode  :character   Mode  :character  
+ Mean   :2018                                                           
+ 3rd Qu.:2021                                                           
+ Max.   :2023                                                           
+                                                                        
+   abstract           keywords          study_aim         study_location    
+ Length:318         Length:318         Length:318         Length:318        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ study_year_start study_year_end  study_type        data_source       
+ Min.   : -99     Min.   : -99   Length:318         Length:318        
+ 1st Qu.:2000     1st Qu.:2009   Class :character   Class :character  
+ Median :2006     Median :2014   Mode  :character   Mode  :character  
+ Mean   :1918     Mean   :1932                                        
+ 3rd Qu.:2012     3rd Qu.:2016                                        
+ Max.   :2021     Max.   :2022                                        
+ NA's   :5        NA's   :5                                           
+    race1              race1_ss           race2              race2_ss      
+ Length:318         Min.   :     -99   Length:318         Min.   :    -99  
+ Class :character   1st Qu.:     183   Class :character   1st Qu.:    102  
+ Mode  :character   Median :    2777   Mode  :character   Median :    627  
+                    Mean   :  306851                      Mean   : 111596  
+                    3rd Qu.:   23966                      3rd Qu.:   5108  
+                    Max.   :22689016                      Max.   :8683174  
+                    NA's   :8                             NA's   :11       
+    race3              race3_ss          race4              race4_ss      
+ Length:318         Min.   :    -99   Length:318         Min.   :    -99  
+ Class :character   1st Qu.:     84   Class :character   1st Qu.:     78  
+ Mode  :character   Median :    966   Mode  :character   Median :    506  
+                    Mean   : 117760                      Mean   :  96176  
+                    3rd Qu.:   3818                      3rd Qu.:   3568  
+                    Max.   :9741891                      Max.   :5187397  
+                    NA's   :99                           NA's   :142      
+    race5              race5_ss           race6              race6_ss       
+ Length:318         Min.   :     -99   Length:318         Min.   :   -99.0  
+ Class :character   1st Qu.:      41   Class :character   1st Qu.:    24.2  
+ Mode  :character   Median :     320   Mode  :character   Median :   421.5  
+                    Mean   :  554194                      Mean   : 28327.3  
+                    3rd Qu.:    3298                      3rd Qu.: 12428.2  
+                    Max.   :17840962                      Max.   :537895.0  
+                    NA's   :209                           NA's   :272       
+    race7              race7_ss            race8              race8_ss        
+ Length:318         Min.   :    -99.0   Length:318         Min.   :     21.0  
+ Class :character   1st Qu.:    275.8   Class :character   1st Qu.:    327.8  
+ Mode  :character   Median :   2650.0   Mode  :character   Median :   1262.5  
+                    Mean   : 119354.5                      Mean   : 189432.8  
+                    3rd Qu.:  11909.0                      3rd Qu.:   3829.2  
+                    Max.   :2043099.0                      Max.   :1129350.0  
+                    NA's   :296                            NA's   :312        
+     eth1              eth1_ss             eth2              eth2_ss        
+ Length:318         Min.   :   -99.0   Length:318         Min.   :   -99.0  
+ Class :character   1st Qu.:    42.0   Class :character   1st Qu.:    36.5  
+ Mode  :character   Median :   343.5   Mode  :character   Median :   394.0  
+                    Mean   : 33359.1                      Mean   : 10392.8  
+                    3rd Qu.:  2998.2                      3rd Qu.:  1091.0  
+                    Max.   :736987.0                      Max.   :152942.0  
+                    NA's   :294                           NA's   :295       
+     eth3              eth3_ss             eth4              eth4_ss   
+ Length:318         Min.   :    2.00   Length:318         Min.   :276  
+ Class :character   1st Qu.:   37.75   Class :character   1st Qu.:276  
+ Mode  :character   Median :  507.50   Mode  :character   Median :276  
+                    Mean   : 4035.90                      Mean   :276  
+                    3rd Qu.: 4178.50                      3rd Qu.:276  
+                    Max.   :22338.00                      Max.   :276  
+                    NA's   :308                           NA's   :317  
+     eth5              eth5_ss        eth6              eth6_ss   
+ Length:318         Min.   :656   Length:318         Min.   :284  
+ Class :character   1st Qu.:656   Class :character   1st Qu.:284  
+ Mode  :character   Median :656   Mode  :character   Median :284  
+                    Mean   :656                      Mean   :284  
+                    3rd Qu.:656                      3rd Qu.:284  
+                    Max.   :656                      Max.   :284  
+                    NA's   :317                      NA's   :317  
+   eth7         eth7_ss          eth8         eth8_ss        access_to_care 
+ Mode:logical   Mode:logical   Mode:logical   Mode:logical   Min.   :0.000  
+ NA's:318       NA's:318       NA's:318       NA's:318       1st Qu.:0.000  
+                                                             Median :0.000  
+                                                             Mean   :0.379  
+                                                             3rd Qu.:1.000  
+                                                             Max.   :1.000  
+                                                             NA's   :4      
+ treatment_received health_outcome   cancer_ovarian   cancer_uterine  
+ Min.   :0.000      Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.000      1st Qu.:1.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :1.000      Median :1.0000   Median :0.0000   Median :0.0000  
+ Mean   :0.586      Mean   :0.7611   Mean   :0.1603   Mean   :0.2212  
+ 3rd Qu.:1.000      3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:0.0000  
+ Max.   :1.000      Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+ NA's   :4          NA's   :4        NA's   :6        NA's   :6       
+ cancer_cervical   cancer_vulvar     other_gyn_onc          endo        
+ Min.   :0.00000   Min.   :0.00000   Min.   :0.00000   Min.   :0.00000  
+ 1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.00000  
+ Median :0.00000   Median :0.00000   Median :0.00000   Median :0.00000  
+ Mean   :0.08974   Mean   :0.03205   Mean   :0.01282   Mean   :0.00641  
+ 3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.00000  
+ Max.   :1.00000   Max.   :1.00000   Max.   :1.00000   Max.   :1.00000  
+ NA's   :6         NA's   :6         NA's   :6         NA's   :6        
+    fibroids       other_gyn_surg        fert          matmorbmort    
+ Min.   :0.00000   Min.   :0.0000   Min.   :0.00000   Min.   :0.0000  
+ 1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.0000  
+ Median :0.00000   Median :0.0000   Median :0.00000   Median :0.0000  
+ Mean   :0.02564   Mean   :0.1186   Mean   :0.09936   Mean   :0.3013  
+ 3rd Qu.:0.00000   3rd Qu.:0.0000   3rd Qu.:0.00000   3rd Qu.:1.0000  
+ Max.   :1.00000   Max.   :1.0000   Max.   :1.00000   Max.   :1.0000  
+ NA's   :6         NA's   :6        NA's   :6         NA's   :6       
+   other_preg         phys_div            other             covid        
+ Min.   :0.00000   Min.   :0.000000   Min.   :0.00000   Min.   :0.00000  
+ 1st Qu.:0.00000   1st Qu.:0.000000   1st Qu.:0.00000   1st Qu.:0.00000  
+ Median :0.00000   Median :0.000000   Median :0.00000   Median :0.00000  
+ Mean   :0.04487   Mean   :0.003205   Mean   :0.07372   Mean   :0.02885  
+ 3rd Qu.:0.00000   3rd Qu.:0.000000   3rd Qu.:0.00000   3rd Qu.:0.00000  
+ Max.   :1.00000   Max.   :1.000000   Max.   :1.00000   Max.   :1.00000  
+ NA's   :6         NA's   :6          NA's   :6         NA's   :6        </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_model_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 16
+  doi        model_number stratified stratgrp subanalysis subgrp outcome measure
+  &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  
+1 10.1097/A…            1 Yes        Achieve… No          &lt;NA&gt;   Steril… Percent
+2 10.1097/A…            1 Yes        Achieve… No          &lt;NA&gt;   Steril… Percent
+3 10.1097/A…            1 Yes        Achieve… No          &lt;NA&gt;   Steril… Percent
+4 10.1097/A…            1 Yes        Achieve… No          &lt;NA&gt;   Steril… Percent
+5 10.1097/A…            1 Yes        Achieve… No          &lt;NA&gt;   Steril… Percent
+6 10.1097/A…            2 Yes        Did not… No          &lt;NA&gt;   Nonach… Percent
+# ℹ 8 more variables: measure_comments &lt;chr&gt;, covariates &lt;chr&gt;,
+#   comparison &lt;dbl&gt;, ref &lt;chr&gt;, compare &lt;chr&gt;, point &lt;dbl&gt;, lower &lt;dbl&gt;,
+#   upper &lt;dbl&gt;</code></pre>
+</div>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

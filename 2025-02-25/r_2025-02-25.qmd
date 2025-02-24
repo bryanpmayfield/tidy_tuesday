@@ -1,0 +1,37 @@
+
+```{r}
+
+library(tidyverse)
+
+```
+
+```{r}
+
+all_data = tidytuesdayR::tt_load('2025-02-25')
+
+
+```
+
+
+```{r}
+
+df_article_data <- all_data$article_dat
+
+df_model_data <- all_data$model_dat
+
+```
+
+
+```{r}
+
+summary(df_article_data)
+
+```
+
+
+
+```{r}
+
+head(df_model_data)
+
+```
