@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>r_2025-02-25</title>
+<title>Tidy Tuesday for February 25, 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,7 +106,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tidy Tuesday for February 25, 2025</h1>
+</div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
 
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -289,6 +304,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 # ℹ 8 more variables: measure_comments &lt;chr&gt;, covariates &lt;chr&gt;,
 #   comparison &lt;dbl&gt;, ref &lt;chr&gt;, compare &lt;chr&gt;, point &lt;dbl&gt;, lower &lt;dbl&gt;,
 #   upper &lt;dbl&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find gyn onc related articles </span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df_article_data <span class="sc">|&gt;</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(cancer_ovarian <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> cancer_uterine <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> cancer_cervical <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> cancer_vulvar <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> other_gyn_onc <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 138 × 65
+       pmid doi         jabbrv journal  year month day   title abstract keywords
+      &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   
+ 1 30890269 10.1016/j.… Gynec… Gyneco…  2019 07    05    Iden… Germlin… Adult; …
+ 2 29605049 10.1016/j.… Gynec… Gyneco…  2018 07    10    Expl… To eval… High vo…
+ 3 28800945 10.1016/j.… Gynec… Gyneco…  2018 07    10    Impa… Althoug… Age; Di…
+ 4 27697287 10.1016/j.… Gynec… Gyneco…  2017 05    29    The … Enrollm… Clinica…
+ 5 27103178 10.1016/j.… Gynec… Gyneco…  2017 05    01    Surg… To eval… Delayed…
+ 6 28159409 10.1016/j.… Gynec… Gyneco…  2017 05    25    Disp… To exam… Adenoca…
+ 7 26706661 10.1016/j.… Gynec… Gyneco…  2016 06    01    Dyin… To iden… Advance…
+ 8 26325527 10.1016/j.… Gynec… Gyneco…  2016 01    07    Asse… Sexual … Depress…
+ 9 26026735 10.1016/j.… Gynec… Gyneco…  2015 10    15    Asso… Endomet… Dispari…
+10 25937529 10.1016/j.… Gynec… Gyneco…  2015 08    20    Pati… The aim… Cervica…
+# ℹ 128 more rows
+# ℹ 55 more variables: study_aim &lt;chr&gt;, study_location &lt;chr&gt;,
+#   study_year_start &lt;dbl&gt;, study_year_end &lt;dbl&gt;, study_type &lt;chr&gt;,
+#   data_source &lt;chr&gt;, race1 &lt;chr&gt;, race1_ss &lt;dbl&gt;, race2 &lt;chr&gt;,
+#   race2_ss &lt;dbl&gt;, race3 &lt;chr&gt;, race3_ss &lt;dbl&gt;, race4 &lt;chr&gt;, race4_ss &lt;dbl&gt;,
+#   race5 &lt;chr&gt;, race5_ss &lt;dbl&gt;, race6 &lt;chr&gt;, race6_ss &lt;dbl&gt;, race7 &lt;chr&gt;,
+#   race7_ss &lt;dbl&gt;, race8 &lt;chr&gt;, race8_ss &lt;dbl&gt;, eth1 &lt;chr&gt;, eth1_ss &lt;dbl&gt;, …</code></pre>
 </div>
 </div>
 

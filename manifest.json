@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.4.2",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "2025-02-25/r_2025-02-25.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    ".python-version": {
+      "checksum": "c0479ff484dacd51dc5ba0461b16b9bf"
+    },
+    "2021-02-25/Starbucks_2021_12_21.Rmd": {
+      "checksum": "2acbe2e875b8a3b0c57f68769950fa07"
+    },
+    "2025-02-25/article_dat.csv": {
+      "checksum": "1efe65c2757ac5b9dab38728dcc1223e"
+    },
+    "2025-02-25/blastocyst.png": {
+      "checksum": "f9f2b472c8e67918f91ca24bbb335799"
+    },
+    "2025-02-25/maternal_mortality_rural.png": {
+      "checksum": "be9085184529f954f93b0a243cd15ba9"
+    },
+    "2025-02-25/meta.yaml": {
+      "checksum": "d970e5667b4ff39aac8d824e7f4fa8e5"
+    },
+    "2025-02-25/model_dat.csv": {
+      "checksum": "519603cd37573ebcd2d147656c39a25f"
+    },
+    "2025-02-25/num_articles_by_journal.png": {
+      "checksum": "d9582c78d3bc9457183b7a20f4135203"
+    },
+    "2025-02-25/python_2025-02-25.qmd": {
+      "checksum": "403392d4a145c31c79b54059a052b169"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/bootstrap/bootstrap-icons.css": {
+      "checksum": "3104c106b6c22560ae274d7c56f116c5"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/bootstrap/bootstrap-icons.woff": {
+      "checksum": "e4cc83ddcec34db65724eb56c5230b4c"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/bootstrap/bootstrap.min.css": {
+      "checksum": "c3d94fc928527d3d5ff9475017cd76ce"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/bootstrap/bootstrap.min.js": {
+      "checksum": "7ccd9d390d31af98110f74f842ea9b32"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/clipboard/clipboard.min.js": {
+      "checksum": "ad98572d415d2f2452845a6068a913c0"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/quarto-html/anchor.min.js": {
+      "checksum": "a58f4bdbf86e8ae057af9131b5b1bcfd"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/quarto-html/popper.min.js": {
+      "checksum": "ad6c106f3ba17d5a54d8053a4c4899ca"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/quarto-html/quarto-syntax-highlighting.css": {
+      "checksum": "099cd394577c915952e100d918f76f84"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/quarto-html/quarto.js": {
+      "checksum": "6c59bad421c4db5cafa70cd49864a5d1"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/quarto-html/tippy.css": {
+      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
+    },
+    "2025-02-25/r_2025-02-25_files/libs/quarto-html/tippy.umd.min.js": {
+      "checksum": "d828775275749701b48bd9d958814111"
+    },
+    "2025-02-25/r_2025-02-25.html": {
+      "checksum": "f7fe78445de8719998c0fdf9bc957216"
+    },
+    "2025-02-25/r_2025-02-25.qmd": {
+      "checksum": "829624bd5e249ff469c78b08c34b69ea"
+    },
+    "2025-02-25/README_files/libs/bootstrap/bootstrap-icons.css": {
+      "checksum": "3104c106b6c22560ae274d7c56f116c5"
+    },
+    "2025-02-25/README_files/libs/bootstrap/bootstrap-icons.woff": {
+      "checksum": "e4cc83ddcec34db65724eb56c5230b4c"
+    },
+    "2025-02-25/README_files/libs/bootstrap/bootstrap.min.css": {
+      "checksum": "c3d94fc928527d3d5ff9475017cd76ce"
+    },
+    "2025-02-25/README_files/libs/bootstrap/bootstrap.min.js": {
+      "checksum": "7ccd9d390d31af98110f74f842ea9b32"
+    },
+    "2025-02-25/README_files/libs/clipboard/clipboard.min.js": {
+      "checksum": "ad98572d415d2f2452845a6068a913c0"
+    },
+    "2025-02-25/README_files/libs/quarto-html/anchor.min.js": {
+      "checksum": "a58f4bdbf86e8ae057af9131b5b1bcfd"
+    },
+    "2025-02-25/README_files/libs/quarto-html/popper.min.js": {
+      "checksum": "ad6c106f3ba17d5a54d8053a4c4899ca"
+    },
+    "2025-02-25/README_files/libs/quarto-html/quarto-syntax-highlighting.css": {
+      "checksum": "099cd394577c915952e100d918f76f84"
+    },
+    "2025-02-25/README_files/libs/quarto-html/quarto.js": {
+      "checksum": "6c59bad421c4db5cafa70cd49864a5d1"
+    },
+    "2025-02-25/README_files/libs/quarto-html/tippy.css": {
+      "checksum": "ebd6f8ce46a677e1a4f5f8a8317109a9"
+    },
+    "2025-02-25/README_files/libs/quarto-html/tippy.umd.min.js": {
+      "checksum": "d828775275749701b48bd9d958814111"
+    },
+    "2025-02-25/README.html": {
+      "checksum": "e714242eebb37141a0c715d53336911e"
+    },
+    "2025-02-25/README.md": {
+      "checksum": "41e2cd494692bbde2995edfee91c40ce"
+    },
+    "hello.py": {
+      "checksum": "060e405c41c190ee5996c835a584bd50"
+    },
+    "pyproject.toml": {
+      "checksum": "05e596046856d7b81999907067c912e7"
+    },
+    "uv.lock": {
+      "checksum": "eb1e00a66449fb73d7711528a0c0458d"
+    }
+  },
+  "users": null
+}
